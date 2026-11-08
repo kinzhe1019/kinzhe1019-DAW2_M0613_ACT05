@@ -1,0 +1,118 @@
+/*
+    ACTIVITAT 5 · Les funcions
+    estils.css: el full d'estils, compartit per totes les pàgines
+    (els set apartats i el repte enllacen aquest mateix fitxer)
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f2;
+    margin: 0;
+}
+
+/* la capcalera i el peu amb el color de la botiga */
+header, footer {
+    background: #02736f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* el h1 del header en blanc, si no agafa el verd dels altres titols i no es veu */
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* separo una mica els peus entre ells (a l'apartat 1 en surten tres) */
+footer {
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* el contingut centrat i amb una amplada maxima */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #02736f;
+}
+
+/* la graella: les targetes una al costat de l'altra, i si no caben baixen a la linia de sota */
+.graella {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* cada targeta es una caixa blanca amb la vora rodona */
+.targeta {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.targeta h3 {
+    margin: 5px 0;
+    color: #02736f;
+}
+
+.categoria {
+    color: #777;
+    font-size: 14px;
+}
+
+.preu {
+    font-weight: bold;
+    color: #c2661f;
+}
+
+/* el missatge quan una categoria no te cap producte */
+.avis {
+    background: #fde9d9;
+    border-left: 4px solid #c2661f;
+    padding: 10px;
+}
+
+/* els resultats que surten de les funcions, en una caixa blanca */
+.resultat {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+/* la taula del resum, igual que a l'activitat 3 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #02736f;
+    color: white;
+}
+
+td {
+    background: white;
+}
+
+tr:nth-child(even) td {
+    background: #d9ecea;
+}
